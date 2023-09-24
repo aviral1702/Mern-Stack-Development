@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+
+        :root{
+            --theme_color:rgba(75, 192, 196, 0.829);
+        }
+
+      * {
+        font-family: montserrat;
+      }
+
+      .contact-card {
+        height: 60vh;
+        border: 2px solid red;
+        margin: 200px;
+        border-radius: 20px;
+        display: flex;
+        overflow: hidden;
+        /* padding: 10px; */
+      }
+
+      .contact-info,
+      .contact-form {
+        height: 100%;
+      }
+
+      .contact-info {
+        background-color: var(--theme_color);
+        width: 30%;
+        padding: 40px;
+        color: white;
+        border-radius: 15px;
+        box-sizing: border-box;
+      }
+
+      .contact-form {
+        /* background-color: rgba(107, 200, 141, 0.723); */
+        width: 70%;
+        padding: 40px;
+        margin: auto;
+      }
+
+      .form-group{
+        display: flex;
+        gap: 10px;
+      }
+
+      .form-input{
+        background-color: aqua;
+        width: 100%;
+      }
+
+      .my-input{
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 30px;
+        padding: 5px;
+        border: none;
+        border-bottom: 2px solid black;
+        outline: none;
+      }
+
+      .my-btn{
+        padding: 10px 15px;
+        font-size: 1.1em;
+        border-radius: 10px;
+        background-color: var(--theme_color);
+        border: none;
+        color: white;
+        font-weight: bold;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="contact-card">
+      <div class="contact-info">
+        <h1>Contact Information</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore saepe
+          nam inventore officia enim illo, perferendis soluta nulla perspiciatis
+          laborum.
+        </p>
+
+        <div style="display: flex; align-items: center; gap: 20px">
+          <i class="fa-solid fa-phone fa-2x"></i>
+          <p style="margin: 0">
+            <span>7896541230</span><br />
+            <span>9874563210</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <form>
+          <div class="form-group">
+            <div class="form-input">
+              <label>Your Name</label>
+              <input type="text" class="my-input" />
+            </div>
+
+            <div class="form-input">
+              <label>Your Email</label>
+              <input type="text" class="my-input" />
+            </div>
+        </div>
+
+        <div class="form-input">
+          <label>Your Subject</label>
+          <input type="text" class="my-input" />
+        </div>
+
+        <div class="form-input">
+          <label>Message</label>
+          <textarea rows="4" class="my-input"></textarea>
+        </div>
+
+        <button class="my-btn">Submit</button>
+
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

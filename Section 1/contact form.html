@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic">
+
+    <style>
+
+        *{
+            font-family: roboto;
+        }
+
+        .form-title{
+            text-align:center;
+            color: black;
+            font-size: 30px;
+        }
+
+        .contact{
+            border: 2px solid grey;
+            width: 30%;
+            font-size: 20px;
+            border-radius: 25px;
+            padding: 20px;
+            box-shadow: 2px 2px;
+            background-color: rgba(205, 212, 247, 0.805);
+        }
+
+
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url(https://img.freepik.com/premium-photo/website-internet-contact-us-page-concept-with-phone-chat-email-icons-symbol-telephone-mail-mobile-phone-website-page-contact-us-wide-web-banner-copy-space-blue-background_256259-2730.jpg);
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .my-input{
+            display: block;
+            padding: 1px ;
+            margin:5px 0px 5px 0px;
+            border-radius: 5px;
+            width: 80%;
+        }
+
+        .my-btn{
+            border-radius: 20px;
+            background-color: rgba(57, 230, 230, 0.754);
+            padding: 10px;
+            width: 50%;
+            margin-top: 15px;
+            display: block;
+            font-size: medium;
+        }
+
+        textarea{
+            resize: none;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="contact">
+        <form>
+            <h3 class="form-title">Get in touch with us!!</h3>
+
+            <label>Name</label>
+            <input class="my-input" type="text" placeholder="Aviral Chandra" required>
+
+            <label>Email</label>
+            <input type="text" class="my-input" placeholder="example@gmail.com" required>
+
+            <label>Phone</label>
+            <input type="tel" maxlength="10" class="my-input" placeholder="9999999999" required>
+
+            <label>Message</label>
+            <textarea cols="30" rows="10" class="my-input" placeholder="Write your query" required></textarea>
+
+            <label>Upload Image</label>
+            <input type="file" class="my-input">
+
+            <button class="my-btn">Send Message</button>
+        </form>
+
+    </div>
+    
+</body>
+</html>

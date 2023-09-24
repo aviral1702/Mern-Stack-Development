@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      .my-img {
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .main-frame {
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        gap: 50px;
+        border-radius: 15px;
+      }
+
+      .left-frame,
+      .right-frame {
+        height: auto;
+        margin: 15px;
+      }
+
+      .left-frame {
+        background-color: beige;
+        width: 30%;
+        padding: 20px;
+        color: black;
+        border-radius: 15px;
+        box-sizing: border-box;
+      }
+
+      .right-frame {
+        width: 30%;
+        background-color: beige;
+        padding: 20px;
+        border-radius: 15px;
+      }
+
+      .plan-type {
+        text-align: center;
+      }
+
+      .my-btn {
+        border-color: brown;
+        border-radius: 10px;
+        background-color: aqua;
+        font-size: larger;
+        padding: 10px;
+      }
+
+      .subscription {
+        text-align: center;
+        padding-top: 15px;
+      }
+    </style>
+  </head>
+
+  <body class="bg-danger">
+
+    <header class="bg-dark">
+      <div class="container">
+        <h1 class="text-center text-white">MUSIC PLAYER !! 🎶</h1>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark px-3">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav gap-4 w-100">
+              <a class="nav-item nav-link active text-white" href="#">Home</a>
+              <a class="nav-item nav-link active text-white" href="#"
+                >Your Library</a
+              >
+              <a class="nav-item nav-link active text-white" href="#">Albums</a>
+              <a class="nav-item nav-link active text-white" href="#"
+                >Podcasts</a
+              >
+              <a class="nav-item nav-link active text-white" href="#"
+                >Try Premium👑</a
+              >
+            </div>
+          </div>
+          <div class="input-group search-input h-75 py-2 w-50">
+            <input
+              type="text"
+              placeholder="Search for your song...."
+              class="form-control"
+            />
+            <button class="btn btn-primary">
+              <i class="fa-solid fa-magnifying-glass"></i
+              >&nbsp;&nbsp;&nbsp;&nbsp;Search
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container py-2">
+      <div class="row bg-primary-subtle py-2">
+        <h2 class="py-2">Popular Artists</h2>
+        <div class="col-md-2">
+          <div class="card bg-danger-subtle">
+            <img
+              class="my-img rounded-circle"
+              src="https://bollyhollybaba.com/wp-content/uploads/2019/12/Parmish-Verma.jpg"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <h5>Parmish Verma</h5>
+              <h6>Artist</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <div class="card bg-danger-subtle">
+            <img
+              class="my-img rounded-circle"
+              src="https://wirally.com/wp-content/uploads/2022/06/3-60.jpg"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <h5>Badshah</h5>
+              <h6>Artist</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <div class="card bg-danger-subtle">
+            <img
+              class="my-img rounded-circle"
+              src="https://e0.pxfuel.com/wallpapers/955/421/desktop-wallpaper-arijit-singh-live.jpg"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <h5>Arijit Singh</h5>
+              <h6>Artist</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <div class="card bg-danger-subtle">
+            <img
+              class="my-img rounded-circle"
+              src="https://lastfm.freetls.fastly.net/i/u/270x205/f66d650a32be1d539226994d518cdb43.jpg"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <h5>Armaan Malik</h5>
+              <h6>Artist</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <div class="card bg-danger-subtle">
+            <img
+              class="my-img rounded-circle"
+              src="https://www.okeasylife.com/wp-content/uploads/2019/04/Shirley-Setia.jpg"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <h5>Shirley Setia</h5>
+              <h6>Artist</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <div class="card bg-danger-subtle">
+            <img
+              class="my-img rounded-circle"
+              src="https://lastfm.freetls.fastly.net/i/u/ar0/f1df7c3eb64df572d647ba70e5dfa795.jpg"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <h5>Darshan Raval</h5>
+              <h6>Artist</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-2">
+      <div class="row bg-primary-subtle py-2">
+        <h2 class="py-2">Trending Now</h2>
+        <div class="col-md-2">
+          <div class="card bg-danger-subtle">
+            <img
+              class="my-img rounded"
+              src="https://i.pinimg.com/1200x/60/9a/80/609a8061a8ae93f2735f3e3e20190b90.jpg"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <h5>Humnava Mere</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <div class="card bg-danger-subtle">
+            <img
+              class="my-img rounded"
+              src="https://c.saavncdn.com/757/Simroon-Tera-Naam-From-Yaariyan-2-Hindi-2023-20230904194535-500x500.jpg"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <h6>Simroon Tera Naam</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <div class="card bg-danger-subtle">
+            <img
+              class="my-img rounded"
+              src="https://c.saavncdn.com/102/Dream-Girl-2-Hindi-2023-20230828202810-500x500.jpg"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <h6>Dream Girl 2</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <div class="card bg-danger-subtle">
+            <img
+              class="my-img rounded"
+              src="https://c.saavncdn.com/047/Jawan-Hindi-2023-20230908042346-500x500.jpg"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <h6>Jawan</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <div class="card bg-danger-subtle">
+            <img
+              class="my-img rounded"
+              src="https://c.saavncdn.com/692/Ve-Fukrey-From-Fukrey-3-Hindi-2023-20230911105845-500x500.jpg"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <h6>Fukrey 3</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <div class="card bg-danger-subtle">
+            <img
+              class="my-img rounded"
+              src="https://c.saavncdn.com/055/Kasam-Se-Hindi-2023-20230825134840-500x500.jpg"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <h6>Kasam Se</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row bg-primary-subtle py-2">
+        <div class="col-md-2">
+          <div class="card bg-danger-subtle">
+            <img
+              class="my-img rounded"
+              src="https://c.saavncdn.com/162/Tere-Naina-From-Dill-Bill-Hindi-2023-20230823101528-500x500.jpg"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <h5>Tere Naina</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <div class="card bg-danger-subtle">
+            <img
+              class="my-img rounded"
+              src="https://c.saavncdn.com/022/Heeriye-feat-Arijit-Singh-Hindi-2023-20230605195039-500x500.jpg"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <h6>Heeriye</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <div class="card bg-danger-subtle">
+            <img
+              class="my-img rounded"
+              src="https://c.saavncdn.com/303/Malang-Sajna-Hindi-2022-20230403132803-500x500.jpg"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <h6>Malang Sajna</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <div class="card bg-danger-subtle">
+            <img
+              class="my-img rounded"
+              src="https://c.saavncdn.com/897/Rasiya-From-Brahmastra-Hindi-2022-20220924115713-500x500.jpg"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <h6>Rasiya</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <div class="card bg-danger-subtle">
+            <img
+              class="my-img rounded"
+              src="https://c.saavncdn.com/504/Haaniya-Ve-From-Thank-God-Hindi-2022-20220928001001-500x500.jpg"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <h6>Haaniye Ve</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <div class="card bg-danger-subtle">
+            <img
+              class="my-img rounded"
+              src="https://c.saavncdn.com/139/Raabta-Hindi-2023-20230830134708-500x500.jpg"
+              alt=""
+            />
+            <div class="card-body text-center">
+              <h6>Raabta</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="subscription text-white">Subscription</h2>
+    <div class="main-frame">
+      <div class="left-frame">
+        <div class="plan-type">
+          <h4>Monthly Plan</h4>
+          <h2>1 Month</h2>
+          <h1><i>₹99/month</i></h1>
+          <hr />
+          <button class="my-btn bg-danger-subtle">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="right-frame">
+        <div class="plan-type">
+          <h4>Annual Plan</h4>
+          <h2>1 Year</h2>
+          <h1><i>₹999/year</i></h1>
+          <hr />
+          <button class="my-btn bg-danger-subtle">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-white mt-5">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-sm-6">
+            <a href="" class="text-white d-block text-decoration-none">About</a>
+            <a href="" class="text-white d-block text-decoration-none"
+              >Careers</a
+            >
+            <a href="" class="text-white d-block text-decoration-none">News</a>
+          </div>
+          <div class="col-sm-6">
+            <a href="" class="text-white d-block text-decoration-none"
+              >Redeem Pro</a
+            >
+            <a href="" class="text-white d-block text-decoration-none">Help</a>
+            <a href="" class="text-white d-block text-decoration-none"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="bg-dark py-3">
+        <hr />
+        <div class="icon text-center">
+          <i class="fa-brands fa-facebook fa-3x pe-5"></i>
+          <i class="fa-brands fa-instagram fa-3x pe-5"></i>
+          <i class="fa-brands fa-youtube fa-3x pe-5"></i>
+          <i class="fa-brands fa-linkedin fa-3x"></i>
+        </div>
+        <h5 class="text-center mt-3">&copy;My Company 2023</h5>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+
+      ScrollReveal().reveal("header", {
+        origin: "top",
+        distance: "100px",
+        duration: 500,
+        interval: 100,
+      });
+      
+      ScrollReveal().reveal(".card", {
+        origin: "bottom",
+        distance: "50px",
+        duration: 300,
+        interval: 100,
+      });
+
+      ScrollReveal().reveal(".main-frame", {
+        origin: "top",
+        distance: "50px",
+        duration: 300,
+        interval: 100,
+        delay: 200,
+      });
+    </script>
+  </body>
+</html>
